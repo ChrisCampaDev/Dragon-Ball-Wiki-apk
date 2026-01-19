@@ -37,6 +37,7 @@ export default function Detail() {
 					flex: 1,
 					justifyContent: "center",
 					alignItems: "center",
+					backgroundColor: "white",
 				}}
 			>
 				<ActivityIndicator size="large" color="#f89719" />

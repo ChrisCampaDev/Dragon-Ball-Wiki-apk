@@ -4,7 +4,13 @@ import { details } from "../styles/sheets";
 export function PlanetDetail({ planet }) {
 	if (!planet) {
 		return (
-			<View style={details.container}>
+			<View
+				style={{
+					flex: 1,
+					justifyContent: "center",
+					alignItems: "center",
+				}}
+			>
 				<View style={details.centerContainer}>
 					<Text style={details.errorText}>Planeta no encontrado</Text>
 				</View>

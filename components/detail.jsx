@@ -1,15 +1,8 @@
 import { View, Text, ScrollView, Image } from "react-native";
 import { details } from "../styles/sheets";
-import { Stack } from "expo-router";
 export default function DetailCard({ character }) {
 	return (
 		<View style={details.container}>
-			<Stack.Screen
-				options={{
-					headerTitle: character.name,
-					headerTintColor: "orange",
-				}}
-			/>
 			{/* Header Image */}
 			<View style={details.imageContainer}>
 				<Image

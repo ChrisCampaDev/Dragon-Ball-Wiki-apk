@@ -4,19 +4,20 @@ import { useEffect, useRef } from "react";
 import { cardStyles } from "../styles/sheets";
 
 export function PjCard({ data, planet }) {
-	const { id, name, image, ki, race, description, affiliation } = data;
+	const { id, name, image, ki, race, description, affiliation, isDestroyed } =
+		data;
 
 	return (
 		<Link href={!planet ? `/${data.id}` : `planets/${id}`} asChild>
 			<Pressable>
-				<View key={data.id} style={cardStyles.container}>
+				<View key={id} style={cardStyles.container}>
 					<View style={cardStyles.content}>
-						<Image source={{ uri: data.image }} style={cardStyles.imagen} />
+						<Image source={{ uri: image }} style={cardStyles.imagen} />
 						<View style={cardStyles.textContainer}>
-							<Text style={cardStyles.text}>Nombre: {data.name}</Text>
+							<Text style={cardStyles.text}>Nombre: {name}</Text>
 							<Text style={cardStyles.subtext}>
 								{!planet ? "Raza: " : "Destruido: "}
-								{!planet ? data.race : data.isDestroyed ? "Si" : "No"}
+								{!planet ? race : isDestroyed ? "Si" : "No"}
 							</Text>
 							{!planet && (
 								<>
