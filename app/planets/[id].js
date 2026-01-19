@@ -15,7 +15,6 @@ export default function Detail() {
 				setLoading(true);
 				const data = await getPlanetbyID(id);
 				setCharacter(data);
-				console.log(data);
 			} catch (err) {
 				setError(err.message);
 			} finally {
