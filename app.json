@@ -1,29 +1,31 @@
 {
-  "expo": {
-    "name": "react-native-blank",
-    "slug": "react-native-blank",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+	"expo": {
+		"name": "dragon-ball-wiki",
+		"slug": "DragobBallWiki",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/dragon-ball-svgrepo-com.svg",
+		"userInterfaceStyle": "light",
+		"newArchEnabled": true,
+		"scheme": "dragonball",
+		"splash": {
+			"image": "./assets/dragon-ball-svgrepo-com.svg",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"ios": {
+			"supportsTablet": true
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/dragon-ball-svgrepo-com.svg",
+				"backgroundColor": "#ffffff"
+			},
+			"edgeToEdgeEnabled": true
+		},
+		"web": {
+			"favicon": "./assets/dragon-ball-svgrepo-com.svg"
+		},
+		"plugins": ["expo-router"]
+	}
 }
