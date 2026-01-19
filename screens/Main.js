@@ -20,16 +20,11 @@ export default function Main() {
 	return (
 		<View>
 			{loading ? (
-				<View
-					style={{
-						justifyContent: "center",
-						alignItems: "center",
-						flex: 1,
-						backgroundColor: "white",
-					}}
-				>
-					<ActivityIndicator size={"large"} color="#f89719" />
-				</View>
+				<ActivityIndicator
+					size={"large"}
+					color="#f89719"
+					style={{ marginTop: 100 }}
+				/>
 			) : (
 				<FlatList
 					data={data}
